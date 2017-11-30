@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
+  AppRegistry,  
   View,
-  StatusBar
+  StatusBar,
 } from 'react-native';
 
-import BarraNavegacao from './src/components/BarraNavegacao';
+//import BarraNavegacao from './src/components/BarraNavegacao';
+import CenaPrincipal from './src/components/CenaPrincipal';
 
 export default class react_native_scenes extends Component {
   render() {
     return (
-      <View>
-        <StatusBar hidden={true}/>
-        <BarraNavegacao/>
-      </View>
+      <CenaPrincipal/>
     );
   }
 }

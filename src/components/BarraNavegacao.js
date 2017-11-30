@@ -9,19 +9,25 @@ import {
 export default class BarraNavegacao extends Component {
   render() {
     return (
-        <View>
-            <Text style={styles.barraTitulo}> ATM Consultoria </Text>
-        </View>
+        
+      <View style={styles.barraTitulo}>
+        <Text style={styles.titulo}>ATM Consultoria</Text>
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-    barraTitulo:{
-        backgroundColor: '#CCC',
-        padding: 10,
-        fontSize: 18,
-        height: 60,
-        flex: 1
+    barraTitulo: {
+      backgroundColor: '#CCC',
+      padding: 10,
+      height: 60
+    },
+    titulo: {
+      flex: 1,
+      fontSize: 18,
+      alignItems: 'center'
     }
-})
+ 
+  })
+  
