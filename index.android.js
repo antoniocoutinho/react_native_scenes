@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,  
-  View,
-  StatusBar,
+
+
 } from 'react-native';
+import { Navigator } from 'react-native-deprecated-custom-components'
+
 
 //import BarraNavegacao from './src/components/BarraNavegacao';
 import CenaPrincipal from './src/components/CenaPrincipal';
+import CenaClientes from './src/components/CenaClientes';
 
 export default class react_native_scenes extends Component {
   render() {
     return (
-      <CenaPrincipal/>
+      <Navigator
+      initialRoute={{id: 'a'}}
+        renderScene={(route, navigator) =>{
+          if (route.id === 'a'){
+            return(<CenaPrincipal nav={navigator}/>);
+          }
+          if (route.id === 'b'){
+            return(<CenaClientes/>);
+          }
+        }}
+      />
     );
   }
 }
