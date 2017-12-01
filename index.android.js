@@ -21,7 +21,7 @@ export default class react_native_scenes extends Component {
             return(<CenaPrincipal nav={navigator}/>);
           }
           if (route.id === 'b'){
-            return(<CenaClientes/>);
+            return(<CenaClientes nav={navigator}/>);
           }
         }}
       />

@@ -20,7 +20,7 @@ export default class CenaPrincipal extends Component {
     return (
       <View>
         <StatusBar 
-          backgroundColor='#ccc'/>
+          hidden/>
         <BarraNavegacao/>
         <View style={styles.logo}>
           <Image  source={logo}/>
