@@ -16,15 +16,15 @@ export default class react_native_scenes extends Component {
   render() {
     return (
       <Navigator
-      initialRoute={{id: 'a'}}
+      initialRoute={{id: 'principal'}}
         renderScene={(route, navigator) =>{
-          if (route.id === 'a'){
+          if (route.id === 'principal'){
             return(<CenaPrincipal nav={navigator}/>);
           }
-          if (route.id === 'b'){
+          if (route.id === 'clientes'){
             return(<CenaClientes nav={navigator}/>);
           }
-          if (route.id === 'c'){
+          if (route.id === 'contatos'){
             return(<CenaContatos nav={navigator}/>);
           }
         }}

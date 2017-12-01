@@ -30,7 +30,7 @@ export default class CenaPrincipal extends Component {
             
             <TouchableHighlight
               onPress={() => {
-                this.props.nav.push({id: 'b'});
+                this.props.nav.push({id: 'clientes'});
               }}
             >
               <Image style={styles.imgMenu} source={menuCliente}/>
@@ -38,7 +38,7 @@ export default class CenaPrincipal extends Component {
           
             <TouchableHighlight
               onPress={() => {
-                this.props.nav.push({id: 'c'});
+                this.props.nav.push({id: 'contatos'});
               }}
             >
               <Image style={styles.imgMenu} source={menuContato}/>
