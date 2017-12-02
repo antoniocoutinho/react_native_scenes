@@ -14,10 +14,8 @@ const detalheContato = require('../imgs/detalhe_contato.png');
 export default class CenaContatos extends Component {
   render() {
     return (
-      <View>
-        <StatusBar 
-          backgroundColor='#ccc'/>
-        <BarraNavegacao voltar nav={this.props.nav}/>
+      <View style={styles.cena}>
+        <BarraNavegacao voltar nav={this.props.nav} corDeFundo="#61DB8C"/>
         <View>
           <View style={styles.cabecalho}> 
             <Image source={detalheContato}/>
@@ -39,6 +37,10 @@ export default class CenaContatos extends Component {
 }
 
 const styles = StyleSheet.create({
+  cena: {
+    backgroundColor: "#FFF",
+    flex: 1,
+  },
   cabecalho:{
     marginTop: 20,
     flexDirection: 'row',
